@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_700">
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_32"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/doneImage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginEnd="@dimen/margin_32"
+        android:src="@drawable/ic_check_circle"
+        app:layout_constraintBottom_toBottomOf="@id/backImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/titleNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_18"
+        android:hint="@string/note_tittle"
+        android:textColorHint="@color/white_light"
+        android:textSize="@dimen/text_size_24"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/backImage"
+        app:layout_constraintTop_toBottomOf="@id/backImage" />
+
+    <View
+        android:id="@+id/indicatorView"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:background="@drawable/yellow_indicator"
+        app:layout_constraintStart_toStartOf="@id/titleNote"
+        app:layout_constraintTop_toBottomOf="@id/titleNote" />
+
+    <EditText
+        android:id="@+id/subtitleNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_18"
+        android:layout_marginBottom="@dimen/margin_12"
+        android:hint="@string/note_subtitle"
+        android:textColorHint="@color/white_light"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/indicatorView"
+        app:layout_constraintStart_toEndOf="@id/indicatorView"
+        app:layout_constraintTop_toTopOf="@id/indicatorView" />
+
+    <EditText
+        android:id="@+id/contentNote"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_18"
+        android:layout_marginEnd="@dimen/margin_18"
+        android:layout_marginBottom="@dimen/margin_12"
+        android:gravity="start"
+        android:hint="@string/type_text_here"
+        android:textColorHint="@color/white_light"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/indicatorView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
