@@ -5,9 +5,10 @@
     <dimen name="radius_8">8dp</dimen>
     <dimen name="margin_18">18dp</dimen>
     <dimen name="radius_4">4dp</dimen>
-    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
     <dimen name="margin_32">32dp</dimen>
     <dimen name="margin_8">8dp</dimen>
     <dimen name="text_size_24">24sp</dimen>
     <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
 </resources>

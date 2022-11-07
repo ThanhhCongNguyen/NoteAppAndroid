@@ -30,36 +30,55 @@
 
     <EditText
         android:id="@+id/titleNote"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_18"
         android:hint="@string/note_tittle"
+        android:textColor="@color/white_light"
         android:textColorHint="@color/white_light"
         android:textSize="@dimen/text_size_24"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_32"
         app:layout_constraintStart_toStartOf="@id/backImage"
         app:layout_constraintTop_toBottomOf="@id/backImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTimeTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleNote"
+        app:layout_constraintStart_toStartOf="@id/titleNote"
+        android:textSize="@dimen/text_size_10"
+        android:text="10/11/2022"
+        android:layout_marginStart="@dimen/margin_12"
+        android:textColor="@color/white_light"
+        tools:ignore="SmallSp" />
 
     <View
         android:id="@+id/indicatorView"
         android:layout_width="5dp"
         android:layout_height="50dp"
         android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_12"
         android:background="@drawable/yellow_indicator"
         app:layout_constraintStart_toStartOf="@id/titleNote"
-        app:layout_constraintTop_toBottomOf="@id/titleNote" />
+        app:layout_constraintTop_toBottomOf="@id/dateTimeTextView" />
 
     <EditText
         android:id="@+id/subtitleNote"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_12"
         android:layout_marginTop="@dimen/margin_18"
+        android:textColor="@color/white_light"
         android:layout_marginBottom="@dimen/margin_12"
         android:hint="@string/note_subtitle"
         android:textColorHint="@color/white_light"
         android:textSize="@dimen/text_size_18"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_32"
         app:layout_constraintBottom_toBottomOf="@id/indicatorView"
         app:layout_constraintStart_toEndOf="@id/indicatorView"
         app:layout_constraintTop_toTopOf="@id/indicatorView" />
@@ -71,6 +90,7 @@
         android:layout_marginStart="@dimen/margin_18"
         android:layout_marginTop="@dimen/margin_18"
         android:layout_marginEnd="@dimen/margin_18"
+        android:textColor="@color/white_light"
         android:layout_marginBottom="@dimen/margin_12"
         android:gravity="start"
         android:hint="@string/type_text_here"
