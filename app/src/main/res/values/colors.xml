@@ -10,6 +10,20 @@
     <color name="black_200">#323232</color>
     <color name="grey">#737373</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="yellow">#D1D100</color>
+    <color name="yellow">#FFB52E</color>
     <color name="white_light">#b2b2b2</color>
+
+    <color name="white_E8">#E8E8E8</color>
+    <color name="white_FF">#FFFFFFFF</color>
+    <color name="white_BA">#BABABA</color>
+    <color name="white_DA">#D1D1D1</color>
+    <color name="white_75">#757575</color>
+
+    <color name="color_1">#323232</color>
+    <color name="color_2">#F2E34C</color>
+    <color name="color_3">#D10000</color>
+    <color name="color_4">#2E2EFF</color>
+    <color name="color_5">#00A300</color>
+
+
 </resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMiscellaneous"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_miscellaneous"
+    android:orientation="vertical"
+    app:behavior_peekHeight="38dp"
+    app:behavior_hideable="false"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:id="@+id/miscellaneousText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12"
+        android:gravity="center"
+        android:text="@string/miscellaneous"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_note_color_1" />
+
+            <ImageView
+                android:id="@+id/imageColor1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="@dimen/margin_8"
+                android:src="@drawable/ic_done" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_note_color_2" />
+
+            <ImageView
+                android:id="@+id/imageColor2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="@dimen/margin_8" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_note_color_3" />
+
+            <ImageView
+                android:id="@+id/imageColor3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="@dimen/margin_8" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_note_color_4" />
+
+            <ImageView
+                android:id="@+id/imageColor4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="@dimen/margin_8" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_note_color_5" />
+
+            <ImageView
+                android:id="@+id/imageColor5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="@dimen/margin_8" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_10"
+            android:text="@string/pick_color"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAddImage"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginBottom="@dimen/margin_12"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageAddImage"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_image"/>
+
+        <TextView
+            android:id="@+id/textAddImage"
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/add_image"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

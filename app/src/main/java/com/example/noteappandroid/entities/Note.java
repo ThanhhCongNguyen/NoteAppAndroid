@@ -16,6 +16,7 @@ public class Note implements Serializable {
     private String imagePath;
     private String color;
     private String webLink;
+    private String backgroundColor;
 
     public int getId() {
         return id;
@@ -79,5 +80,27 @@ public class Note implements Serializable {
 
     public void setWebLink(String webLink) {
         this.webLink = webLink;
+    }
+
+    public String getBackgroundColor() {
+        return backgroundColor;
+    }
+
+    public void setBackgroundColor(String backgroundColor) {
+        this.backgroundColor = backgroundColor;
+    }
+
+    @Override
+    public String toString() {
+        return "Note{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", dateTime='" + dateTime + '\'' +
+                ", subTitle='" + subTitle + '\'' +
+                ", noteText='" + noteText + '\'' +
+                ", imagePath='" + imagePath + '\'' +
+                ", color='" + color + '\'' +
+                ", webLink='" + webLink + '\'' +
+                '}';
     }
 }
